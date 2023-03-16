@@ -1,0 +1,1 @@
+export const categories = ["Anime","Crime","Dramas","Horror","Romantic","Comedies","Musicals","Fantasy","Action"]

@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+body{
+    width: 100vw; 
+    background-color: #12032c;
+}
+
+#root {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #12032c;
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+::-webkit-scrollbar{
+    width: 6px;
+    /* background: #8414C9; */
+    background: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #8414C9;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: none;
+}
+
+ul{
+    list-style: none;
+}

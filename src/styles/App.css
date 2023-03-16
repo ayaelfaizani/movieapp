@@ -1,0 +1,289 @@
+.herocover {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #783e6e;
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+    
+}
+.bg {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.herocover .title {
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    bottom: 100px;
+    width: 400px;
+    padding-left: 40px;
+}
+/* before :pseudo element*/
+.herocover .title::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 100%;
+    background-color: #8414C9;
+    bottom: -3px;
+    left: 20px;
+    border-radius: 8px;
+}
+.add {
+    border: none;
+    color: #cbcbcb;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: .8rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 30px; */
+    height: 32px;
+    padding-inline: 12px;
+    border-radius: 25px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s ease-in-out;
+}
+.add:hover{
+    background-color: white;
+    color: black;
+}
+
+.inputSearch{
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input{
+    width: 340px;
+    height: 45px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(4px);
+    outline: none;
+    color: #ffffff;
+    transition: all .3s ease-in-out;
+}
+
+input[type=text]:focus {
+    border: none;
+    outline: 1.3px solid rgba(253, 253, 253, 0.368);
+    
+}
+.search {
+    position: relative;   
+    /* background-color: #783e6e; */
+}
+
+.selection{
+    position: relative;
+    /* appearance: none; */
+    height: 31px;
+    background-color: #151874;
+    /* background-color: rgba(255, 255, 255, 0.22); */
+    backdrop-filter: blur(4px);
+    padding-left: 4px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+    /* border-bottom: 3px solid #8414C9; */
+    color: white;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.selection:focus{
+    outline: 2px solid #c7c7c7;
+}
+
+select::after{
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 100%;
+    bottom: -6px;
+    background-color: #8414C9;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.selection::-ms-expand{
+    filter: invert(1) !important;
+    background-color: #8414C9;
+}
+
+/* 
+.selection{
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0;
+    background-color: #8414C9;
+    z-index: 2;
+
+} */
+
+.MovieSerie {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #5c1919; */
+    gap: 15px;
+
+}
+
+.MovieSerie button{
+    border: none;
+    border-radius: 15px;
+    width: 120px;
+    height: 31px;
+    font-weight: bold;
+    background-color: #ffffff;
+    transition: all .2s ease-in;
+}
+
+/* .MovieSerie button:hover{
+    background-color: #8414C9;
+    color: white;
+} */
+
+.active{
+    background-color: #8414C9 !important;
+    color: white;
+} 
+
+
+.all {
+    background-color: #5c1919;
+}
+
+.movserlst {
+    background-color: #0000008d;
+}
+
+.movserlst h2{
+    position: relative;
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    margin-left: 20px;
+}
+.movserlst h2::before {
+    position: absolute;
+    content: "";
+    height: 6px;
+    width: 15%;
+    background-color: #8414C9;
+    bottom: -6px;
+    border-radius: 8px;
+}
+
+.movserlst ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    gap: 8px;
+    padding-inline: 1.2rem;
+    /* flex-direction: row !important; */
+}
+.movserlst ul::-webkit-scrollbar{
+    display: none;
+}
+.moviecard{
+    position: relative;
+    height: 190px;
+    width: 120px;
+    min-width: 120px;
+    min-height: 190px;
+    border-radius: 8px;
+    background-color: bisque;
+    overflow: hidden;
+}
+
+.moviecard *{
+    color: white;
+}
+
+.moviecard .detailes{
+    position: absolute;
+    height: 70px;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.detailes div, .detailes button{
+    margin-inline: 8px;
+}
+.detailes div h4{
+    color: yellow;
+    font-size: 1rem;
+}
+.detailes button{
+    height: 20px;
+    width: 20px;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: -30px;
+}
+
+
+/* .crimelist {
+    background-color: cadetblue;
+}
+.dramaslist {
+    background-color: aliceblue;
+}
+.horrorlist {
+    background-color: chartreuse;
+}
+.romanticlist {
+    background-color: chocolate;
+}
+.comedilist {
+    background-color: coral;
+}
+.musicallist {
+    background-color: cornflowerblue;
+}
+.fantasylist {
+    background-color: crimson;
+}
+.actionlist {
+    background-color: cyan;
+}
+.serieslist {
+    background-color: darkgreen;
+} */
