@@ -1,0 +1,26 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+:root{
+    --bg-clr: #1F0252;
+    --btn-p-bg: #1e0250e6;
+    --btn-a-bg: #8f0070e6;
+}
+
+#root{
+    height: 100%;
+    width: 100%;
+    background-color: var(--bg-clr);
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+button{
+    cursor: pointer;
+}

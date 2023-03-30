@@ -1,0 +1,96 @@
+.section{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(60%);
+}
+
+.section form{
+    height: 90%;
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 12px;
+    background-image: url("../../public/assets/login.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: brightness(40%);
+    transition: all .3s ease-in-out;
+    /* filter: brightness(60%); */
+}
+
+form:hover, form:has(input:focus){
+    box-shadow: 0 0 10px 8px #8414c982;
+}
+
+form::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    z-index: 100;
+}
+
+form input{
+    color: white;
+    outline: none;
+    padding: 10px 15px;
+    width: 60%;
+    border-radius: 25px;
+    border: 0.5px solid #cacaca;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+}
+
+form input::placeholder{
+    color: #ecebeb;
+}
+
+form button{
+    color: white;
+    padding-block: 10px;
+    width: 190px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.02rem;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--btn-a-bg);
+    transition: all .2s ease-in;
+}
+
+form button:hover{
+    transform: scale(1.02);
+    background-color: var(--btn-p-bg);
+}
+
+form button:active{
+    transform: scale(.8);
+}
+
+form p{
+    font-size: smaller;
+    color: #d5b8ff;
+}
+
+form p a{
+    color: white;
+}
